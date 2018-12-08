@@ -30,7 +30,7 @@ $("document").ready(function() {
                 document.querySelector(".yellow.balance-text").innerHTML = "중립 / 의견 없음";
                 document.querySelector(".green.balance-text").innerHTML = "확실히 동의";
 
-                var translations = {'q_15_text':'테스트'};
+                var translations = {};
                 
                 var list = document.getElementsByClassName('question');
                 for (var i = 0; i < list.length; i++) {
