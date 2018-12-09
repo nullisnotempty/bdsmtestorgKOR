@@ -24,7 +24,8 @@ $("document").ready(function() {
             
             // translate
             function translate() {
-                document.querySelector(".toprow p").innerHTML = "다음 질문들에 얼마나 동의하시나요?";
+                if (document.querySelector(".toprow p").innerHTML == "To what extent do you agree with each statement?")
+                    document.querySelector(".toprow p").innerHTML = "다음 질문들에 얼마나 동의하시나요?";
                 
                 document.querySelector(".red.balance-text").innerHTML = "확실히<br />비동의";
                 document.querySelector(".yellow.balance-text").innerHTML = "중립 / 의견 없음";

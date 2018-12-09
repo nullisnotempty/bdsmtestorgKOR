@@ -4,12 +4,18 @@
   "name": "BDSMTEST.org KOR",
   "description": "Translator for BDSMTEST.org",
   "version": "1.0",
- 
-  "browser_action": {
-    "default_icon": "icon.png",
-    "default_popup": "popup.html"
+
+  "background": {
+      "scripts": [
+          "jquery-3.3.1.min.js",
+          "background.js"
+      ]
+  },
+  "page_action": {
+      "default_popup": "popup.html",
+      "default_icon": "icon.png"
   },
   "permissions": [
-    "activeTab"
+    "activeTab", "declarativeContent", "tabs", "http://*/*", "https://*/*"
   ]
 }
